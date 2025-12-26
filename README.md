@@ -81,4 +81,5 @@ weather-app/
 
 Lerma Magno
 Pangasinan State University – IT Student
-🔗 GitHub: https://github.com/your-github-username
+
+🔗 GitHub: https://github.com/lermss/Weather-App
