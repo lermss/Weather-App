@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <div id="loading" class="loading hidden">⏳ Loading weather...</div>
+
+    <h1>🌤 Weather App</h1>
+
+    <div class="theme-selector">
+      <button class="theme-btn" data-theme="default">🌤️</button>
+      <button class="theme-btn" data-theme="night">🌙</button>
+      <button class="theme-btn" data-theme="sunny">☀️</button>
+      <button class="theme-btn" data-theme="rainy">🌧️</button>
+      <button class="theme-btn" data-theme="cloudy">☁️</button>
+      <button class="theme-btn" data-theme="snowy">❄️</button>
+    </div>
+
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div class="unit-toggle">
+      <button onclick="setUnit('metric')">°C</button>
+      <button onclick="setUnit('imperial')">°F</button>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+
+    <div class="current-weather" id="currentWeather"></div>
+    <div class="forecast" id="forecast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
